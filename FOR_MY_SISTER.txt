@@ -1,0 +1,133 @@
+=====================================================
+  ANIMATED STORYBOOKS - INSTRUCTIONS FOR MY SISTER
+  (No tech experience needed - I promise it's easy!)
+=====================================================
+
+Hey Sis! 🎉
+
+I made you animated storybooks you can use for your class
+and YouTube channel. Follow these steps and you'll be
+up and running in about 10 minutes!
+
+
+=====================================================
+STEP 1 — CREATE A FREE GITHUB ACCOUNT
+=====================================================
+
+GitHub is just a website that stores files. Think of it
+like Google Drive but for projects. It's completely free.
+
+1. Go to:  https://github.com
+2. Click "Sign up" in the top right corner
+3. Enter your email, create a password, and pick a username
+4. Verify your email when they send you a confirmation
+5. That's it — you have an account!
+
+
+=====================================================
+STEP 2 — DOWNLOAD THE STORYBOOKS TO YOUR COMPUTER
+=====================================================
+
+Now you'll grab all the files from my page:
+
+1. Go to:  https://github.com/bebasset/storybook-animations
+2. Look for the green button that says "< > Code"
+   (it's near the top right of the page)
+3. Click it — a small box will pop up
+4. Click "Download ZIP" at the bottom of that box
+5. A file called "storybook-animations-main.zip" will
+   download to your computer (check your Downloads folder)
+6. Find that ZIP file and double-click it to unzip it
+7. You'll now have a folder called "storybook-animations-main"
+   — move it somewhere easy to find, like your Desktop
+
+
+=====================================================
+STEP 3 — OPEN A STORYBOOK
+=====================================================
+
+1. Open the "storybook-animations-main" folder
+2. Open the "books" folder inside it
+3. Open the "pip-the-tiny-dragon" folder
+4. Double-click the file called "animation.html"
+   — it will open in your web browser automatically!
+5. You'll see the animated title screen
+
+To turn pages:
+   → Click the "Next" button on screen
+   OR press the right arrow key ( → ) on your keyboard
+
+To go back:
+   → Click the "Back" button
+   OR press the left arrow key ( ← )
+
+
+=====================================================
+STEP 4 — READ THE VOICEOVER SCRIPT
+=====================================================
+
+Inside the same "pip-the-tiny-dragon" folder there is
+a file called "voiceover-script.md"
+
+You can open it with:
+   - Notepad (Windows)
+   - TextEdit (Mac)
+   - Or any word processor
+
+It has the full script — everything you say for each page,
+plus tips on tone (when to be silly, dramatic, soft, etc.)
+
+Print it out so you can read it while the animation plays!
+
+
+=====================================================
+STEP 5 — RECORD IT FOR YOUTUBE (OPTIONAL)
+=====================================================
+
+To record yourself reading over the animation:
+
+OPTION A — Screen Recorder (easiest)
+   Windows: Press  Windows key + G  to open Xbox Game Bar
+            Then click the record button
+   Mac:     Press  Command + Shift + 5  for screen recording
+
+OPTION B — OBS Studio (best quality, free)
+   Download at:  https://obsproject.com
+   It records your screen AND your voice at the same time
+   YouTube has great beginner tutorials — just search
+   "OBS tutorial for beginners"
+
+OPTION C — Record on your phone
+   Set your phone up pointing at the screen and just
+   hit record on your phone camera. Simple and it works!
+
+
+=====================================================
+WHEN NEW BOOKS ARE ADDED
+=====================================================
+
+I'll email you whenever I add a new book. To get it:
+
+1. Go back to:  https://github.com/bebasset/storybook-animations
+2. Click the green "< > Code" button again
+3. Click "Download ZIP" again
+4. Unzip it and you'll have all the books including the new one!
+
+(No need to delete the old folder — just replace it with
+the new download)
+
+
+=====================================================
+NEED HELP?
+=====================================================
+
+Just text or call me and I'll walk you through it!
+
+The only file you ever need to open is "animation.html"
+inside whichever book folder you want.
+Everything works right in your browser — Chrome or Firefox
+work best. No apps to install, no accounts to log in to.
+
+Have fun with your class! 🐉📚🎉
+
+=====================================================
