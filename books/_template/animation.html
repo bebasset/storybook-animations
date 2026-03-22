@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Book Title Here</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Comic Sans MS','Chalkboard SE',cursive;background:#0d1b2a;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;overflow:hidden;}
+#book{width:900px;height:540px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 25px 80px rgba(0,0,0,0.8),0 0 0 5px rgba(255,255,255,0.12);}
+.scene{position:absolute;inset:0;display:none;overflow:hidden;}
+.scene.active{display:block;}
+.textbox{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.94);border-radius:18px;padding:14px 28px;font-size:20px;color:#1a1a2a;text-align:center;max-width:84%;box-shadow:0 4px 20px rgba(0,0,0,0.25);line-height:1.5;z-index:100;font-weight:600;}
+.nav{margin-top:18px;display:flex;gap:16px;align-items:center;}
+.nav button{background:white;border:none;border-radius:50px;padding:12px 30px;font-size:18px;font-family:inherit;font-weight:bold;cursor:pointer;transition:transform .15s;box-shadow:0 4px 14px rgba(0,0,0,0.4);}
+.nav button:hover{transform:scale(1.08);}
+.nav button:disabled{opacity:.35;cursor:default;transform:none;}
+#counter{color:rgba(255,255,255,.8);font-family:inherit;font-size:15px;min-width:110px;text-align:center;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-18px);}}
+@keyframes bounce{0%,100%{transform:translateY(0);}45%{transform:translateY(-22px);}}
+@keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.14);}}
+@keyframes popin{0%{transform:scale(0);opacity:0;}70%{transform:scale(1.1);opacity:1;}100%{transform:scale(1);opacity:1;}}
+</style>
+</head>
+<body>
+<div id="book">
+
+  <!-- SCENE 0: Title -->
+  <div class="scene active" id="s0">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a0040,#5500aa);"></div>
+    <div style="position:absolute;top:50px;left:50%;transform:translateX(-50%);font-size:100px;animation:float 3s ease-in-out infinite;">🐉</div>
+    <div style="position:absolute;top:200px;left:0;right:0;text-align:center;">
+      <div style="font-size:48px;color:white;font-weight:900;text-shadow:4px 4px 0 #5500aa;">Your Book Title</div>
+      <div style="font-size:24px;color:#ddb8ff;margin-top:10px;">A Subtitle Here</div>
+    </div>
+    <div style="position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:13px;color:rgba(255,255,255,.4);">Press Next or → to turn pages</div>
+  </div>
+
+  <!-- SCENE 1: Page 1 -->
+  <div class="scene" id="s1">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,#87CEEB,#c8f0c8);"></div>
+    <!-- Add your characters, backgrounds, and animations here -->
+    <div style="position:absolute;bottom:150px;left:50%;transform:translateX(-50%);font-size:80px;animation:float 3s ease-in-out infinite;">🐉</div>
+    <div class="textbox">Your story text goes here for page 1.</div>
+  </div>
+
+  <!-- SCENE 2: Page 2 -->
+  <div class="scene" id="s2">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,#87CEEB,#c8f0c8);"></div>
+    <div style="position:absolute;bottom:150px;left:50%;transform:translateX(-50%);font-size:80px;animation:bounce 1s ease-in-out infinite;">🌟</div>
+    <div class="textbox">Your story text goes here for page 2.</div>
+  </div>
+
+  <!-- Add more scenes by copying the pattern above (s3, s4, s5...) -->
+  <!-- Remember to update TOTAL in the script below! -->
+
+</div>
+
+<div class="nav">
+  <button id="btnP" onclick="go(-1)" disabled>← Back</button>
+  <span id="counter">Page 1 of 3</span>
+  <button id="btnN" onclick="go(1)">Next →</button>
+</div>
+
+<script>
+const TOTAL = 3; // ← UPDATE THIS to match your number of scenes
+let cur = 0;
+
+function go(dir) {
+  const next = cur + dir;
+  if (next < 0 || next >= TOTAL) return;
+  document.getElementById('s' + cur).classList.remove('active');
+  cur = next;
+  document.getElementById('s' + cur).classList.add('active');
+  document.getElementById('counter').textContent = 'Page ' + (cur + 1) + ' of ' + TOTAL;
+  document.getElementById('btnP').disabled = cur === 0;
+  document.getElementById('btnN').disabled = cur === TOTAL - 1;
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); go(1); }
+  if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+});
+</script>
+</body>
+</html>
